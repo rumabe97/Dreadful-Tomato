@@ -14,15 +14,20 @@
   }
 
   &-logo {
-    height: 54px;
-    width: auto;
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 0 35px 13px rgba(255, 0, 0, 0.3);
+      background: rgba(255, 0, 0, 0.21);
+    }
   }
 
-  &-buttons{
+  &-buttons {
     display: flex;
     flex-direction: row;
     gap: 2rem;
   }
+
   &-button_login {
     display: flex;
     align-items: center;
@@ -34,7 +39,7 @@
     color: white;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease, border-left-color 0.3s ease, border-right-color 0.3s ease;
     font-size: 1rem;
 
     &:hover {
@@ -49,7 +54,7 @@
     }
   }
 
-  &-button_trial{
+  &-button_trial {
     color: white;
     background: #cb271b;;
     border-radius: 1rem;
@@ -57,16 +62,16 @@
     border: none;
     font-size: 1rem;
     cursor: pointer;
-    transition: width 0.3s ease;
+    transition: transform 0.3s ease;
 
-    &:hover{
-      width: 13rem;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }
 
 @media screen and (min-width: 47.5rem) {
-  .header-content{
+  .header-content {
     justify-content: space-between;
   }
 }
