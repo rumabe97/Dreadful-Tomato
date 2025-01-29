@@ -5,3 +5,30 @@ html, body {
   overflow: hidden;
   margin: 0;
 }
+
+body {
+  overflow-y: auto;
+}
+
+
+/* Estilos generales del scrollbar */
+::-webkit-scrollbar {
+  width: 5px; /* Grosor mínimo */
+  height: 5px; /* Para scroll horizontal */
+}
+
+/* Track (fondo del scrollbar) */
+::-webkit-scrollbar-track {
+  background: transparent; /* Hace que el fondo no sea visible */
+}
+
+/* Handle (barra que se mueve) */
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.3); /* Color gris semitransparente */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Handle al hacer hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.6); /* Se hace un poco más visible */
+}
